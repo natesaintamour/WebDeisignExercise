@@ -1,0 +1,389 @@
+/* Reset */
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+
+	body {
+		line-height: 1;
+	}
+
+	ol, ul {
+		list-style: none;
+	}
+
+	blockquote, q {
+		quotes: none;
+	}
+
+	blockquote:before, blockquote:after, q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	body {
+		-webkit-text-size-adjust: none;
+	}
+
+
+@font-face {
+font-family: 'AvenirLight';
+src: url('fonts/Avenir-Light.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'AvenirBlack';
+src:url('fonts/Avenir-Black.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Calisto';
+src: url('/fonts/CALIST.ttf');
+}
+
+html{
+    width: 100%;
+}
+body {
+    width: 100%;
+    
+}
+p{
+    font-family: "AvenirLight";
+    color: #073451;
+}
+
+h4{
+    font-family: "AvenirLight";
+    color: #357abf;
+}
+
+/* Header */
+
+header {
+    padding: 30px;
+    padding-bottom: 40px;
+    width: 100%;    
+    box-sizing: border-box;
+    position: relative;
+}
+
+header p{
+    font-family: "AvenirLight";
+    font-size: 20px;
+    color: #073451;
+    width: 600px;
+}
+
+header p span{
+    font-weight: bold;
+}
+
+header img{
+    width: 300px;
+    float:right;
+    margin-top: -15px;
+}
+
+
+/* Contact Box Area */
+
+.backgroundPattern{
+    background-color: #073451;
+    background-size: 150px;
+    //background-repeat: repeat-x;
+    background-image: url(backgroundgraphics/HockeyBackground.png);
+    height: 550px;
+    display: flex;
+    
+}
+.contactBoxWrapper{
+    height: 80%;
+    width: 550px;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    display: block;
+    outline: 4px solid #f49821;
+    outline-offset: 15px;
+}
+
+.formWrapper{
+    margin: auto;
+    width: 100%;   
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.formWrapper h4{
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+form{
+    font-family: "AvenirLight";   
+    width: 90%;
+    margin: auto;
+}
+
+.formText{
+    display: inline-block;
+    padding: 10px 30px ;
+    margin: 8px 0;
+    width: 22%;
+    text-align: left;
+}
+
+#checkboxText{
+    display: inline-block;
+    width: 90%;
+    text-align: left;
+}
+
+form span{
+    color: #898989;
+}
+
+form input{
+    width: 50%;
+    padding: 5px 20px;
+}
+
+input::placeholder {
+    color: #f49821;}
+
+.checkbox {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+}
+
+form input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.formWrapper button {
+    margin: auto;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-image: url(backgroundgraphics/ButtonBanner.svg);    
+    border : none;
+    color: white;
+    margin: 20px;
+    margin-bottom: 10px;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: "AvenirLight";
+}
+
+/* Below Contact Box */
+
+.belowContactBox {
+    margin-top: 130px;
+    width: 100%;
+    text-align: center;
+}
+
+.belowContactBox h2 {
+    font-family: "AvenirLight";
+    font-size: 2em;
+    font-weight: bold;
+    color: #357abf;
+}
+
+.belowContactBox h3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: "AvenirLight";
+    color: #073451;
+    font-size: 1.2em;
+    margin: auto;
+    width: 500px;
+}
+
+.belowContactBox button {
+    background-color: white;
+    
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-image: url(backgroundgraphics/ButtonBanner.svg);
+    
+    border : none;
+    color: white;
+    margin: 20px;
+    margin-top: 30px;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: "AvenirLight";
+    cursor: default;
+}
+button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+button:active {
+    outline: none;
+    border: none;
+}
+button:focus {
+    outline: none;
+    border: none;
+}
+
+/* Picture Area */
+
+.learnMoreSectionWrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 150px;
+}
+
+.learnMoreSectionWrapper h3 {
+    font-family: "AvenirBlack";
+    font-variant: small-caps;
+    font-size: 2em;
+    color: #357abf;
+    width: 70%;
+    margin: auto;
+    background-size: 70%;
+    background-color: white;
+    position: relative;
+    top: -5px;
+}
+
+#calisto {
+    font-family: "Calisto";
+}
+
+.imagearea {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 20px;
+    margin: auto;
+    outline: 2px solid #f49821;
+    outline-offset: 20px;
+    z-index: 10
+        align-items: center;
+    justify-content: center;
+}
+
+.imagearea div{
+    width: 600px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 10px 0 10px;
+}
+
+.imagearea img{
+    width: 100%;
+    padding: -15px;
+    outline: 2px solid #f49821;
+    outline-offset: -15px;
+}
+
+.hoverImg:hover{
+    outline-offset: -25px;
+    outline: 2px solid #f49821;
+}
+
+.learnMoreSectionWrapper  p{
+    
+    position: relative;
+    top: -50%;
+    font-family: "AvenirBlack";
+    font-variant: small-caps;
+    font-size: 1.8em;
+    color: white;
+    
+    background-position:center;
+    background-size: 150%;
+    background-image: url(backgroundgraphics/Bannersvg.svg)
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    margin-bottom: 15px;
+   
+}
+
+footer p {
+    line-height: 25px;
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 1.3em;
+}
+.socialmediaicons {
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+}
+footer img{
+    height: 50px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.bluetext{
+    color: #357abf;
+}
+
+.Rectangle_10 {
+  
+}
+
+@media screen and (max-width: 800px) {
+    
+    header img{
+        float: none;
+        position: relative;
+        display: block;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+    
+    header p{
+        text-align: center;
+        margin: auto;
+        position: relative;
+    }
+    
+    .learnMoreSectionWrapper  p{
+        font-size: 1.5em;    
+    }
+    
+    .learnMoreSectionWrapper h3 {
+        font-size: 1.5em;
+    }
